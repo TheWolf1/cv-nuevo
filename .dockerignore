@@ -1,0 +1,4 @@
+# En el Dockerfile, añade la línea COPY . .
+# Ejemplo de .dockerignore:
+node_modules
+.next
