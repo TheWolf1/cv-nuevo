@@ -1,15 +1,32 @@
 version: '3.8'
 
 services:
+  nginx: 
+    container_name: nginx-container
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - nextjs
+    networks:
+      - intranet
   nextjs:
-    container_name: nextjs-app
+    container_name: portafolio-next
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:3000"
+      - "3000"
     volumes:
       - .:/app
       - /app/node_modules
     environment:
       - NODE_ENV=production
+    networks:
+      - intranet
+networks:
+  intranet:
+    driver: bridge
