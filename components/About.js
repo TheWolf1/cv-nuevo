@@ -8,21 +8,19 @@ const bio = [
   {
     id: 11,
     data: [
-      { id: 1, type: "First Name", value: "Steve" },
-      { id: 2, type: "Last Name", value: "Milner" },
-      { id: 3, type: "Age", value: "27 Years" },
-      { id: 4, type: "Nationality", value: "Tunisian" },
-      { id: 5, type: "Freelance", value: "Available" },
+      { id: 1, type: "Nombre", value: "Kevin Daniel" },
+      { id: 2, type: "Apellido", value: "Paz Ortiz" },
+      { id: 3, type: "Edad", value: "23 años" },
+      { id: 4, type: "Nacionalidad", value: "Colombiano" },
     ],
   },
   {
     id: 12,
     data: [
-      { id: 6, type: "Address", value: "Tunis" },
-      { id: 7, type: "Phone", value: "+216 21 184 010" },
-      { id: 8, type: "Email", value: "demo@demo.com" },
-      { id: 9, type: "Skype", value: "steve.milner" },
-      { id: 10, type: "Langages", value: "French, English" },
+      { id: 6, type: "Direccion", value: "Sevilla" },
+      { id: 7, type: "Telefono", value: "+34 603 33 82 14" },
+      { id: 8, type: "Email", value: "contacto@kevinpaz.dev" },
+      { id: 10, type: "Idiomas", value: "Español, Ingles" },
     ],
   },
 ];
@@ -30,79 +28,74 @@ const bio = [
 const counters = [
   {
     id: 1,
-    title: 'years of <span className="block">experience</span>',
-    value: "12",
+    title: 'años de <span className="block">experiencia</span>',
+    value: "5",
   },
   {
     id: 2,
-    title: 'completed <span className="block">projects</span>',
-    value: "97",
+    title: '<span className="block">proyectos</span> completados',
+    value: "10",
   },
   {
     id: 3,
-    title: 'happy <span className="block">customers</span>',
-    value: "81",
+    title: 'Proyectos <span className="block">personales</span>',
+    value: "4",
   },
-  { id: 4, title: 'awards <span className="block">won</span>', value: "53" },
+  { id: 4, title: 'cursos <span className="block">realizados</span>', value: "5" },
 ];
 
 const experiences = [
   {
     id: 1,
-    date: "2018 - Present",
-    title: "web developer",
-    company: "envato",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    date: "2023 - Presente",
+    title: "Desarrollador Backend",
+    company: "Beateam",
+    desc: "Formo parte del equipo de Beateam, líder en el mercado español de recambios automotrices.",
   },
   {
     id: 2,
-    date: "2013 - 2018",
-    title: "UI/UX Designer",
-    company: "Themeforest",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    date: "2020 - 2023",
+    title: "Full Stack",
+    company: "NetCommerce",
+    desc: "Empresa dedicada a brindar consultoría a potenciales clientes americanos.",
   },
   {
     id: 3,
-    date: "2005 - 2013",
-    title: "consultant",
-    company: "Videohive",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    date: "2018 - 2020",
+    title: "Desarrollador Frontend",
+    company: "Zhowit",
+    desc: "Desarrollo de una plataforma de comercio de servicios B2B.",
   },
 ];
 
 const educations = [
   {
     id: 1,
-    date: "2015",
-    title: "Engineer Degree",
-    unv: "Oxford University",
+    date: "2017",
+    title: "Desarrollador Full Stack",
+    unv: "Academlo - Academy of art",
     desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
   },
   {
     id: 2,
-    date: "2012",
-    title: "Master Degree",
-    unv: "Kiev University",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
-  },
-  {
-    id: 3,
-    date: "2009",
-    title: "Bachelor Degree",
-    unv: "Tunis High School",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
-  },
+    date: "2015",
+    title: "Técnico en Aplicaciones Informáticas",
+    unv: "ITSI (Instituto Técnico Superior Ibarra)",
+    desc: "Desarrolle mis primeras habilidades como desarrollador de software.",
+  }
 ];
 
 const skills = [
-  { id: 1, name: "html", value: "25" },
-  { id: 2, name: "javascript", value: "89" },
-  { id: 3, name: "css", value: "70" },
-  { id: 4, name: "php", value: "66" },
-  { id: 5, name: "wordpress", value: "95" },
-  { id: 6, name: "jquery", value: "50" },
-  { id: 7, name: "angular", value: "65" },
-  { id: 8, name: "react", value: "45" },
+  { id: 1, name: "php", value: "90" },
+  { id: 2, name: "react", value: "75" },
+  { id: 3, name: "javascript", value: "90" },
+  { id: 4, name: "jquery", value: "50" },
+  { id: 5, name: "angular", value: "20" },
+  { id: 6, name: "html", value: "90" },
+  { id: 7, name: "css", value: "70" },
+  { id: 8, name: "wordpress", value: "50" },
+  
+  
 ];
 
 const About = () => {
@@ -112,9 +105,9 @@ const About = () => {
       <div className="w-full">
         {/* Section Title Starts */}
         <SectionTitle
-          bigTitle={"resume"}
-          colorTitle={"me"}
-          normalTitle={"about"}
+          bigTitle={"conóceme"}
+          colorTitle={"mí"}
+          normalTitle={"sobre"}
         />
         {/* Section Title Ends */}
         <div className="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
@@ -122,7 +115,7 @@ const About = () => {
             {/* Personal Informations Starts */}
             <div className="xl:basis-1/2 lg:basis-5/12 down-lg:basis-full">
               <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-22 text-white font-semibold">
-                personal infos
+                Información personal
               </h3>
               <img
                 className="hidden xs:block rounded-full border-4 border-solid border-black-3 w-230 h-230 mb-25 mx-auto"
@@ -195,7 +188,7 @@ const About = () => {
             } mx-auto max-w-40prcent mt-70 mb-55`}
           />
           <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-48 text-white font-semibold text-center">
-            my skills
+            Mis habilidades
           </h3>
           {/* Skills Starts */}
           <div className="flex w-full flex-wrap">
@@ -230,7 +223,7 @@ const About = () => {
             } mx-auto max-w-40prcent mt-35 mb-55`}
           />
           <h3 className="uppercase text-fs-26 xs:text-fs-21 pb-48 text-white font-semibold text-center">
-            experience &amp; education
+            Experiencia &amp; Educación
           </h3>
           {/* Resume Starts */}
           <div className="flex down-sm:flex-col from-sm:mb-40">

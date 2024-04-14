@@ -6,7 +6,8 @@ const messages = {
       description_about_me: `I'm a Tunisian based web designer &amp; front‑end developer
               focused on crafting clean &amp; user‑friendly experiences, I am
               passionate about building excellent software that improves the
-              lives of those around me.`
+              lives of those around me.`,
+      web_developer: "web developer"
     },
     es: {
       hi:"¡Hola!",
@@ -14,7 +15,8 @@ const messages = {
       more_about_me: "mas sobre mi",
       description_about_me: `¡Hola! Soy Kevin, un apasionado desarrollador web con 
       sede en Sevilla, España. Con una sólida formación y experiencia en el desarrollo 
-      de aplicaciones web, me encanta convertir ideas creativas en soluciones digitales funcionales y elegantes.`
+      de aplicaciones web, me encanta convertir ideas creativas en soluciones digitales funcionales y elegantes.`,
+      web_developer: "Desarrollador web"
 
     },
   };
