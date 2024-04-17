@@ -5,7 +5,7 @@ import { useContext } from "react";
 import SectionTitle from "./SectionTitle";
 
 const items = [
-  {
+/*   {
     id: 1,
     title: "Image Project",
     type: "img",
@@ -37,72 +37,72 @@ const items = [
     client: "Envato",
     langages: "HTML, CSS, Javascript",
     previewLink: "www.envato.com",
-  },
+  }, */
   {
     id: 4,
-    title: "Image Project",
+    title: "WayAndSat",
     type: "img",
-    src: "",
-    img: "assets/img/projects/project-4.jpg",
-    project: "Website",
-    client: "Envato",
-    langages: "HTML, CSS, Javascript",
-    previewLink: "www.envato.com",
+    src: "https://wayandsat.com/",
+    img: "assets/img/projects/wayandsat.jpg",
+    project: "ERP",
+    client: "Way & Sat",
+    cargo: "Backend",
+    previewLink: "wayandsat.com/",
   },
   {
     id: 5,
-    title: "Image Project",
+    title: "Pintu Bahia",
     type: "img",
-    src: "",
-    img: "assets/img/projects/project-5.jpg",
-    project: "Website",
-    client: "Envato",
-    langages: "HTML, CSS, Javascript",
-    previewLink: "www.envato.com",
+    src: "https://pintubahia.proximamente.xyz/",
+    img: "assets/img/projects/pintu.jpg",
+    project: "ERP",
+    client: "Pintu Bahia",
+    cargo: "Backend",
+    previewLink: "pintubahia.proximamente.xyz/",
   },
   {
     id: 6,
-    title: "Image Project",
+    title: "Mazda Mexico",
     type: "img",
-    src: "",
-    img: "assets/img/projects/project-6.jpg",
-    project: "Website",
-    client: "Envato",
-    langages: "HTML, CSS, Javascript",
-    previewLink: "www.envato.com",
+    src: "https://www.mazda.mx/",
+    img: "assets/img/projects/mazda.jpg",
+    project: "ERP",
+    client: "Mazda",
+    cargo: "Backend",
+    previewLink: "mazda.mx",
   },
   {
     id: 7,
-    title: "Image Project",
+    title: "Registro de la propiedad",
     type: "img",
-    src: "",
-    img: "assets/img/projects/project-7.jpg",
+    src: "https://rpquininde.gob.ec/",
+    img: "assets/img/projects/rpq.jpg",
     project: "Website",
     client: "Envato",
-    langages: "HTML, CSS, Javascript",
-    previewLink: "www.envato.com",
+    cargo: "Full Stack",
+    previewLink: "rpquininde.gob.ec",
   },
   {
     id: 8,
-    title: "Image Project",
+    title: "Accesorios Alex",
     type: "img",
-    src: "",
-    img: "assets/img/projects/project-8.jpg",
+    src: "https://accesoriosalex.com/",
+    img: "assets/img/projects/alex.jpg",
     project: "Website",
-    client: "Envato",
-    langages: "HTML, CSS, Javascript",
-    previewLink: "www.envato.com",
+    client: "Accesorios Alex",
+    cargo: "Full Stack",
+    previewLink: "accesoriosalex.com",
   },
   {
     id: 9,
-    title: "Image Project",
+    title: "Galleta Mk",
     type: "img",
-    src: "",
-    img: "assets/img/projects/project-9.jpg",
+    src: "https://galletamkt.com/desarrollo-web",
+    img: "assets/img/projects/galleta.jpg",
     project: "Website",
-    client: "Envato",
-    langages: "HTML, CSS, Javascript",
-    previewLink: "www.envato.com",
+    client: "Galleta Mk",
+    cargo: "Front End",
+    previewLink: "galletamkt.com",
   },
 ];
 
@@ -113,9 +113,9 @@ const Portfolio = () => {
       <div className="w-full pb-60">
         {/* Section Title Starts */}
         <SectionTitle
-          bigTitle={"works"}
-          colorTitle={"portfolio"}
-          normalTitle={"my"}
+          bigTitle={"prooyectos"}
+          colorTitle={"portafolio"}
+          normalTitle={"mi"}
         />
         {/* Section Title Ends */}
         {/* Portfolio Items Starts */}
