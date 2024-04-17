@@ -94,13 +94,13 @@ const Switcher = () => {
           </div>
         </div>
       </div>
-      <div
+     {/*  <div
         id="showSwitcher"
         className="styleSecondColor cursor-pointer"
         onClick={() => setToggle(true)}
       >
         <i className="fa fa-cog fa-spin" />
-      </div>
+      </div> */}
     </div>
   );
 };

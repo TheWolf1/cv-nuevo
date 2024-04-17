@@ -74,7 +74,7 @@ const educations = [
     date: "2017",
     title: "Desarrollador Full Stack",
     unv: "Academlo - Academy of art",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
+    desc: "Realize el curso de desarrollador FrontEnd en Academlo.",
   },
   {
     id: 2,

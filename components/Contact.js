@@ -6,10 +6,9 @@ import { useContext, useState } from "react";
 import SectionTitle from "./SectionTitle";
 
 const socials = [
-  { id: 1, icon: "fa fa-facebook", link: "#" },
-  { id: 2, icon: "fa fa-twitter", link: "#" },
-  { id: 3, icon: "fa fa-youtube", link: "#" },
-  { id: 4, icon: "fa fa-dribbble", link: "#" },
+  { id: 1, icon: "fa fa-linkedin", link: "https://www.linkedin.com/in/kevin-paz-7a895b1a6/" },
+  { id: 2, icon: "fa fa-whatsapp", link: "https://wa.me/34603338214" },
+  { id: 3, icon: "fa fa-google", link: "mail:contacto@kevinpaz.dev" },
 ];
 
 const Contact = () => {
@@ -74,9 +73,9 @@ const Contact = () => {
       <div className="w-full">
         {/* Section Title Starts */}
         <SectionTitle
-          bigTitle={"contact"}
-          colorTitle={"touch"}
-          normalTitle={"get in"}
+          bigTitle={"contactame"}
+          colorTitle={"contacto"}
+          normalTitle={"ponte en"}
         />
         {/* Section Title Ends */}
         <div className="xl:max-w-1140 custom-md-3:max-w-[calc(100%-195px)] lg:max-w-960 md:max-w-720 sm:max-w-540 xs:max-w-full mx-auto">
@@ -84,37 +83,35 @@ const Contact = () => {
             {/* Contact Details Starts */}
             <div className="w-1/3 down-lg:w-full px-16 xs:px-0">
               <h3 className="text-fs-26 xs:text-fs-21 mb-16 font-semibold uppercase">
-                don't be shy !
+               Ey!
               </h3>
               <p className="mb-16 font-Open-sans text-fs-15 xs:text-fs-14">
-                Feel free to get in touch with me. I am always open to
-                discussing new projects, creative ideas or opportunities to be
-                part of your visions.
+                No dudes en ponerte en contacto conmigo. Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones.
               </p>
               <div className="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
                 <i className="fa fa-envelope-open absolute left-0 top-10 text-fs-33 text-accent" />
                 <span className="block opacity-80 uppercase font-normal">
-                  mail me
+                  contactame
                 </span>
-                steve@mail.com
+                contacto@kevinpaz.dev
               </div>
               <div className="relative font-Open-sans font-semibold pl-50 pt-5 leading-lh-21 text-fs-15 xs:text-fs-14 mb-16">
                 <i className="fa fa-phone-square absolute left-0 top-10 text-fs-39 text-accent" />
                 <span className="block opacity-80 uppercase font-normal">
-                  call me
+                 Llámame
                 </span>
-                +216 21 184 010
+                +34 603 33 8214
               </div>
               <ul className="-ml-5 pt-4 mb-48">
                 {socials.map((social) => (
                   <li key={social.id} className="inline-block">
                     <a
-                      href="#"
+                      href={social.link}
                       className={`social-item inline-block h-40 w-40 leading-lh-42 text-center text-${
                         dark ? "white" : "black-6"
                       } transition duration-300 text-fs-17 mx-6 bg-${
                         dark ? "black-2" : "light-grey hover:text-white"
-                      } rounded-full`}
+                      } rounded-full`} target="__blank"
                     >
                       <i className={social.icon} />
                     </a>
@@ -145,7 +142,7 @@ const Contact = () => {
                       name="name"
                       onChange={(e) => onChange(e)}
                       value={name}
-                      placeholder="YOUR NAME"
+                      placeholder="NOMBRE"
                     />
                   </div>
                   <div className="from-sm:w-1/3 down-sm:w-full px-16 xs:px-0">
@@ -162,7 +159,7 @@ const Contact = () => {
                       name="email"
                       onChange={(e) => onChange(e)}
                       value={email}
-                      placeholder="YOUR EMAIL"
+                      placeholder="EMAIL"
                     />
                   </div>
                   <div className="from-sm:w-1/3 down-sm:w-full px-16 xs:px-0">
@@ -179,7 +176,7 @@ const Contact = () => {
                       name="subject"
                       onChange={(e) => onChange(e)}
                       value={subject}
-                      placeholder="YOUR SUBJECT"
+                      placeholder="ASUNTO"
                     />
                   </div>
                   <div className="w-full px-16 xs:px-0">
@@ -191,7 +188,7 @@ const Contact = () => {
                       } border border-solid border-${
                         dark ? "black" : "grey"
                       } h-160 py-11 px-26 rounded-30 outline-0 transition duration-300 placeholder:text-placeholder field-form`}
-                      placeholder="YOUR MESSAGE"
+                      placeholder="DEJA TU MENSAJE AQUI ;D"
                       defaultValue={""}
                       name="message"
                       onChange={(e) => onChange(e)}
@@ -214,7 +211,7 @@ const Contact = () => {
                             : "text-black-6 group-hover:text-white transition-all duration-300"
                         }`}
                       >
-                        send message
+                        Enviar mensaje
                       </span>
                       <span className="absolute -right-px bottom-0 w-55 h-55 flex items-center justify-center rounded-full text-white text-fs-19 fa fa-send bg-accent" />
                     </button>
